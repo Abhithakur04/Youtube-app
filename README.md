@@ -30,39 +30,36 @@ To set up the project locally, follow these steps:
    git clone https://github.com/Abhithakur04/YouTube_Clone.git
 2. Install the dependencies:
    ```bash
-npm install
+   npm install
 3. Create a .env file in the root directory and add your YouTube API key:
    ```bash
-GOOGLE_API_KEY=<your-api-key>
+   GOOGLE_API_KEY=<your-api-key>
 4. Start the development server:
    ```bash
-npm start
+   npm start
 5. Open your browser and navigate to:
    ```bash
-http://localhost:5173
+   http://localhost:5173
 
 Usage
 To use this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-
-git clone <repository-url>
-cd YouTube_Clone
+   git clone <repository-url>
+   cd YouTube_Clone
 2. Install the dependencies:
    ```bash
-npm install
+   npm install
 3. Create a .env file in the root directory and add your YouTube API key as:
-   ```bash
-
-GOOGLE_API_KEY=<your-api-key>
+    ```bash
+   GOOGLE_API_KEY=<your-api-key>
 4. Start the development server:
    ```bash
-
-npm start
+   npm start
 5. Open your web browser and navigate to:
    ```bash
-http://localhost:5173
+   http://localhost:5173
 
 
 ## Dependencies
@@ -77,27 +74,3 @@ This project uses the following dependencies:
 - **TailwindCSS**: A utility-first CSS framework for styling.
 
 These dependencies are listed in the `package.json` file.
-
-## Features
-
-This YouTube clone includes several useful features to enhance the user experience:
-
-### 1. **Search Suggestions**
-   - Displays search suggestions as the user types, enhancing the search experience by providing relevant options.
-
-### 2. **Search Caching**
-   - Caches search results to minimize the number of API calls, improving app performance and reducing load times.
-
-### 3. **Optimized Search**
-   - Implements debouncing to avoid making multiple unnecessary API requests while the user is typing in the search bar.
-
-### 4. **Optimized API Calls**
-   - API calls are throttled with debouncing, limiting the frequency of requests to improve performance and reduce server load.
-
-### 5. **Comments Section**
-   - Users can view, post, and interact with comments on videos, just like on the original YouTube platform.
-
-### 6. **Live Chat**
-   - Users can participate in live chat during a stream, allowing real-time interactions between viewers.
-
-

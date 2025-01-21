@@ -30,7 +30,7 @@ const VideoContainer = () => {
     window.addEventListener("scroll",handleScroll);
     return ()=> window.removeEventListener("scroll",handleScroll)
   },[])
-  if(videos.length ===0){
+  if(videos?.length ===0){
     return <div><Shimer/></div>;
   }
   return (<>
