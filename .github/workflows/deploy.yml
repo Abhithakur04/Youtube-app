@@ -1,0 +1,31 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Or 'main' depending on your default branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # This specifies the operating system for the job
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2  # This checks out your code from the repository
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the Node.js version to use
+
+      - name: Install dependencies
+        run: npm install  # Install the dependencies from package.json
+
+      - name: Build project
+        run: npm run build  # Run the build command (adjust if needed for Vite or React)
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.GITHUB_TOKEN }}  # Use GitHub's default token for authentication
+          publish_dir: ./dist  # Path to the build directory (adjust if needed)
