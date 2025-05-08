@@ -74,3 +74,8 @@ This project uses the following dependencies:
 - **TailwindCSS**: A utility-first CSS framework for styling.
 
 These dependencies are listed in the `package.json` file.
+
+## Live Application
+
+You can try the app here: [Live Application](https://youtube-app-iota.vercel.app/)
+
